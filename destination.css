@@ -1,0 +1,236 @@
+body{
+    background-image: url(background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Barlow,sans-serif;
+    font-size: .9375rem;
+    background-color: rgb(11,13,25);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    gap: 50px;
+    /* width: 100%; */
+    height: 70PX;
+}
+.logo img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+nav a {
+    padding-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    gap: 2px;
+}
+.line{
+    width: 20%;
+    border-bottom: 1px solid white;
+    z-index: 1;
+    align-content: center;
+}
+.body1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.navbar2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+}
+.nav2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+button{
+    background: none;
+    border: none;
+    backdrop-filter: blur(20px);
+}
+.nav2 a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.moon{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+}
+.nav2 a:hover {
+    border-bottom: 4px solid rgb(167, 164, 164);
+}
+.nav2 a:focus {
+    border-bottom: 5px solid white;
+}
+.moon1{
+    font-weight: 100;
+    align-items: center;
+}
+.moon1 h2{
+    color: white;
+    margin-bottom: 70px;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.moon2 h1{
+    color: white;
+    font-size: 100px;
+    margin-top: 0px;
+    font-weight: 100;
+}
+.dig{
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+.dig p{
+    color: rgb(177, 173, 173);
+}
+.dert{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.dert p{
+    color: rgb(177, 173, 173);
+}
+.dert h2{
+    color: white;
+}
+.moon {
+    display: none;
+}
+.one {
+    display: block;
+    display: flex;
+}
+.java{
+    display: none;
+}
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    /* background-color: rgba(97, 96, 96, 0.26); */
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    transition: 0.1s;
+}
+.overlay-content {
+    position: relative;
+    top: 0;
+    text-align: left;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.overlay:hover {
+    color: aqua;
+}
+.close {
+ color: white;
+ font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+.close:hover {
+    color: aqua;
+}
+.overlay a {
+    padding: 8px;
+    scroll-padding-top: -20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+.overlay a:hover {
+    color: aqua;
+    width: 85%;
+    border-right: 5px solid rgb(177, 176, 176);
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+.open a {
+    color: white;
+    text-decoration: none;
+}
+.open a:hover, a:active {
+    color: aqua;
+}
+
+@media screen and (max-width:900px){
+    .line{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .java{
+        display: block;
+    }
+    .body1{
+        flex-direction: column;
+    }
+    .moon{
+        flex-direction: column;
+    }
+    .nav2{
+        gap: 3px;
+        justify-content: center;
+    }
+    .moon2 h1{
+        font-size: 70px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .moon1 img{
+        width: 100%;
+    }
+    .moon1{
+        align-items: center;
+        justify-items: center;
+        padding-top: 10px;
+    }
+    .navbar{
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+}

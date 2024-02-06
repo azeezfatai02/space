@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tech.css" />
+    <title>Space</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="line"></div>
+      <nav>
+        <div class="bull">
+          <a href="index.html"><b>00</b>HOME</a>
+        </div>
+        <div class="bull2">
+          <a href="destination.html"><b>01</b>DESTINATION</a>
+        </div>
+        <div class="bull3">
+          <a href="crew.html"><b>02</b>CREW</a>
+        </div>
+        <div class="bull2">
+          <a href="tech.html"><b>03</b>TECHNOLOGY</a>
+        </div>
+      </nav>
+      <div class="java">
+        <div id="myNav" class="overlay">
+          <div onclick="closeNav()" class="close">&times;</div>
+          <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <div class="sam">
+              <a href="destination.html">DESTINATION</a>
+            </div>
+            <a href="crew.html">CREW</a>
+            <a href="tech.html">TECHNOLOGY</a>
+          </div>
+        </div>
+        <span
+          style="font-size: 30px; cursor: pointer"
+          class="open"
+          onclick="openNav()"
+          style="color: aqua"
+        >
+          <a href="javascript:void(0)"> &#9776; </a>
+        </span>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="h2"><b>03</b>LAUNCH 101</h2>
+      <div class="snow">
+        <div class="more">
+          <div class="but">
+            <button autofocus onclick="myfunc(event, 'del1')">1</button>
+            <button onclick="myfunc(event, 'del2')">2</button>
+            <button onclick="myfunc(event, 'del3')">3</button>
+          </div>
+        </div>
+        <div class="made one" id="del1">
+          <div class="care">
+            <p class="pepe">THE TECHNOLOGY...</p>
+            <h1>LAUNCH VEHICLE</h1>
+            <p class="pepe2">
+              A launch vehicle or carrier <br />
+              rocket is a rocket-propelled <br />
+              vehicle used to carry a payload <br />
+              from Earth's surface to space, <br />
+              usually to Earth orbit or <br />
+              beyond. Our WEB-X carrier <br />
+              rocket is the powerful in <br />
+              operation. Standing 150 metres <br />
+              tall, its quite an awe-inspiring <br />
+              sight on the launch pad!
+            </p>
+          </div>
+          <div class="img">
+            <img src="./images/image-launch-vehicle-portrait.jpg" alt="" />
+          </div>
+        </div>
+        <div class="made two" id="del2">
+          <div class="care">
+            <p class="pepe">THE TECHNOLOGY...</p>
+            <h1>SPACEPORT</h1>
+            <p class="pepe2">
+              A spaceport or cosmodrome is a site for <br />
+              launching (or receiving) spacecraft, by <br />
+              analogy to the seaport for ships or airport <br />
+              for aircraft. Based in the famous Cape <br />
+              Canaveral, our spaceport is ideally <br />
+              situated to take advantage of the Earth’s <br />
+              rotation for launch.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./images/image-spaceport-landscape.jpg" alt="" />
+          </div>
+        </div>
+        <div class="made three" id="del3">
+          <div class="care">
+            <p class="pepe">THE TECHNOLOGY...</p>
+            <h1>SPACE CAPSULE</h1>
+            <p class="pepe2">
+              A space capsule is an often- <br />crewed spacecraft that uses a
+              <br />
+              blunt-body reentry capsule to <br />
+              reenter the Earth's atmosphere <br />
+              without wings. Our capsule is <br />
+              where you'll spend your time <br />
+              during the flight. It includes a <br />space gym, cinema, and
+              plenty <br />
+              of other activities to keep you <br />
+              entertained.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./images/image-space-capsule-landscape.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

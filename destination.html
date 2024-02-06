@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="destination.css" />
+    <title>Space</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="line"></div>
+      <nav>
+        <div class="bull">
+          <a href="index.html"><b>00</b>HOME</a>
+        </div>
+        <div class="bull2">
+          <a href="destination.html"><b>01</b>DESTINATION</a>
+        </div>
+        <div class="bull3">
+          <a href="crew.html"><b>02</b>CREW</a>
+        </div>
+        <div class="bull2">
+          <a href="tech.html"><b>03</b>TECHNOLOGY</a>
+        </div>
+      </nav>
+      <div class="java">
+        <div id="myNav" class="overlay">
+          <div onclick="closeNav()" class="close">&times;</div>
+          <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <div class="sam">
+              <a href="destination.html">DESTINATION</a>
+            </div>
+            <a href="crew.html">CREW</a>
+            <a href="tech.html">TECHNOLOGY</a>
+          </div>
+        </div>
+        <span
+          style="font-size: 30px; cursor: pointer"
+          class="open"
+          onclick="openNav()"
+          style="color: aqua"
+        >
+          <a href="javascript:void(0)"> &#9776; </a>
+        </span>
+      </div>
+    </div>
+    <div class="body1">
+      <div class="navbar2">
+        <div class="nav2">
+          <button autofocus onclick="myfunction(event, 'demoss')">
+            <a href="#">MOON</a>
+          </button>
+          <button onclick="myfunction(event, 'demos')">
+            <a href="#">MARS</a>
+          </button>
+          <button onclick="myfunction(event, 'demoss3')">
+            <a href="#">EUROPA</a>
+          </button>
+          <button onclick="myfunction(event, 'demoss4')">
+            <a href="#">TITAN</a>
+          </button>
+        </div>
+        <div class="moon one" id="demoss">
+          <div class="moon1">
+            <h2>01 <b>PICK YOUR DESTINATION</b></h2>
+            <img src="./images/image-moon.png" alt="" />
+          </div>
+          <div class="moon2">
+            <h1>MOON</h1>
+            <div class="dig">
+              <p>
+                See our planet as you’ve never seen it before. A perfect <br />
+                relaxing trip away to help regain perspective and come <br />
+                back refreshed. While you’re there, take in some history <br />
+                by visiting the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+            <div class="dert">
+              <div>
+                <p>AVG. DISTANCE</p>
+                <h2>384,400 KM</h2>
+              </div>
+              <div>
+                <p>EST. TRAVEL TIME</p>
+                <h2>3 DAYS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moon" id="demos">
+          <div class="moon1">
+            <h2>01 <b>PICK YOUR DESTINATION</b></h2>
+            <img src="./images/image-mars.png" alt="" />
+          </div>
+          <div class="moon2">
+            <h1>MARS</h1>
+            <div class="dig">
+              <p>
+                Don't forget to pack your hiking boots. you'll need them
+                <br />
+                to tackle Olympus Mons, the tallest planatery mountains in
+                <br />
+                our solar system. it's two and a half times the size of
+                <br />Everest!
+              </p>
+            </div>
+            <div class="dert">
+              <div>
+                <p>AVG. DISTANCE</p>
+                <h2>255 MIL.KM</h2>
+              </div>
+              <div>
+                <p>EST. TRAVEL TIME</p>
+                <h2>9 MONTHS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moon" id="demoss3">
+          <div class="moon1">
+            <h2>01 <b>PICK YOUR DESTINATION</b></h2>
+            <img src="./images/image-europa.png" alt="" />
+          </div>
+          <div class="moon2">
+            <h1>EUROPA</h1>
+            <div class="dig">
+              <p>
+                The smallest of the four Galilean moons orbiting Jupiter, <br />
+                Europa is a winter lover’s dream. With an icy surface, it’s
+                <br />
+                perfect for a bit of ice skating, curling, hockey, or simple
+                <br />
+                relaxation in your snug wintery cabin.
+              </p>
+            </div>
+            <div class="dert">
+              <div>
+                <p>AVG. DISTANCE</p>
+                <h2>628 MIL.KM</h2>
+              </div>
+              <div>
+                <p>EST. TRAVEL TIME</p>
+                <h2>3 YEARS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moon" id="demoss4">
+          <div class="moon1">
+            <h2>01 <b>PICK YOUR DESTINATION</b></h2>
+            <img src="./images/image-titan.png" alt="" />
+          </div>
+          <div class="moon2">
+            <h1>TITAN</h1>
+            <div class="dig">
+              <p>
+                The only moon known to have a dense atmosphere other <br />
+                than Earth, Titan is a home away from home (just a few <br />
+                hundred degrees colder!). As a bonus, you get striking <br />
+                views of the Rings of Saturn.
+              </p>
+            </div>
+            <div class="dert">
+              <div>
+                <p>AVG. DISTANCE</p>
+                <h2>384,400 KM</h2>
+              </div>
+              <div>
+                <p>EST. TRAVEL TIME</p>
+                <h2>3 DAYS</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
